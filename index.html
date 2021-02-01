@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -333,10 +334,15 @@
                                         <h4><a href="single-product.html">Pure Desi Ghee(Cow)</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>₹400.00</li>
-                                                <li class="discount">₹60.00</li>
+                                                <li>₹1350.00</li>
+                                                <!--li class="discount">₹100.00</li-->
                                             </ul>
-                                            <button class="btn btn-primary my-2">Add to cart</button>
+                                            <button class="btn btn-primary my-2" id="mod">Add to cart</button>
+                                            <div id="product-count">
+                                            <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                                            <input class="input-number" type="text" value="1" min="0" max="10">
+                                            <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -360,10 +366,15 @@
                                         <h4><a href="single-product4.html">Pure Desi Ghee(Buffalo)</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>₹400.00</li>
-                                                <li class="discount">₹60.00</li>
+                                                <li>₹1150.00</li>
+                                                <!--li class="discount">₹60.00</li-->
                                             </ul>
-                                            <button class="btn btn-primary my-2">Add to cart</button>
+                                            <button class="btn btn-primary my-2" id="mod1">Add to cart</button>
+                                            <div id="product-count1">
+                                                <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                                                <input class="input-number" type="text" value="1" min="0" max="10">
+                                                <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -384,10 +395,15 @@
                                         <h4><a href="single-product2.html">Pure Cow Milk</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>₹50.00</li>
-                                                <li class="discount">₹10.00</li>
+                                                <li>₹85.00</li>
+                                                <!--li class="discount">₹10.00</li-->
                                             </ul>
-                                            <button class="btn btn-primary my-2">Add to cart</button>
+                                            <button class="btn btn-primary my-2" id="mod2">Add to cart</button>
+                                            <div id="product-count2">
+                                                <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                                                <input class="input-number" type="text" value="1" min="0" max="10">
+                                                <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -411,10 +427,15 @@
                                         <h4><a href="single-product3.html">Pure Buffalo Milk</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>₹45.00</li>
-                                                <li class="discount">₹10.00</li>
+                                                <li>₹70.00</li>
+                                                <!--li class="discount">₹10.00</li-->
                                             </ul>
-                                            <button class="btn btn-primary my-2">Add to cart</button>
+                                            <button class="btn btn-primary my-2" id="mod3">Add to cart</button>
+                                            <div id="product-count3">
+                                                <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                                                <input class="input-number" type="text" value="1" min="0" max="10">
+                                                <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1180,6 +1201,24 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        $("#product-count").hide();
+           $("#mod").click(function(){
+               $("#product-count").show();
+           });
+           $("#product-count1").hide();
+           $("#mod1").click(function(){
+               $("#product-count1").show();
+           });
+           $("#product-count2").hide();
+           $("#mod2").click(function(){
+               $("#product-count2").show();
+           });
+           $("#product-count3").hide();
+           $("#mod3").click(function(){
+               $("#product-count3").show();
+           });
+    </script>
 
 
 </body>

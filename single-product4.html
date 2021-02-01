@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -188,8 +189,8 @@
                 <div class="col-md-12" style="display: inline-block;margin-bottom:15px">
                     <div class="row pricelist prc_323 bg-selected" data-id="323" data-pid="269">
                         <div class="col-sm-4">
-                            <span class="item_price">₹400.00</span>
-                            <del>₹60.00</del>
+                            <span class="item_price">₹1150.00</span>
+                            <!--del>₹60.00</del-->
                         </div>
                         <div class="col-sm-4">
                             &nbsp; 1kg </div>
@@ -239,7 +240,12 @@
 						<label>non-returnable.</label>
 					</p-->
                 </div>
-                <button class="btn btn-primary my-2">Add to cart</button>
+                <button class="btn btn-primary my-2" id="mod1">Add to cart</button>
+                                            <div id="product-count1">
+                                                <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                                                <input class="input-number" type="text" value="1" min="0" max="10">
+                                                <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                              </div>
 
 
 
@@ -386,6 +392,13 @@
     <script src="./assets/js/mixitup.min.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
+    <script>
+        $("#product-count1").hide();
+           $("#mod1").click(function(){
+               $("#product-count1").show();
+           });
+           
+           </script>
 
 
 </body>
